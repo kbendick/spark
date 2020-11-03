@@ -36,6 +36,9 @@ import org.apache.spark.sql.execution.arrow.ArrowConverters
 import org.apache.spark.sql.internal.{SQLConf, StaticSQLConf}
 import org.apache.spark.sql.types.DataType
 
+/**
+ * Random comment to test PR labeler.
+ */
 private[sql] object PythonSQLUtils extends Logging {
   def parseDataType(typeText: String): DataType = CatalystSqlParser.parseDataType(typeText)
 
