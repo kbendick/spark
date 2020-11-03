@@ -112,7 +112,7 @@ ML:
   - "**/ml/**/*"
   - "**/*mllib_*.R"
 MLLIB:
-  - "**/spark/mllib/"  # TODO - Is it intentional to not label mllib/benchmarks/* as MLLIB, etc?
+  - "**/spark/mllib/**/*"
   - "/mllib-local/**/*"
   - "/python/pyspark/mllib/**/*"
 STRUCTURED STREAMING:
