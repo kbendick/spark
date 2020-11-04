@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IS_DEBUG: "1"
+      RUNNER_DEBUG: "1"
     steps:
     - uses: actions/labeler@2.2.0
       with:
