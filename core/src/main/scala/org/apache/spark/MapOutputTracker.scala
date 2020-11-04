@@ -47,6 +47,7 @@ import org.apache.spark.util._
  * This class maintains a mapping from map index to `MapStatus`. It also maintains a cache of
  * serialized map statuses in order to speed up tasks' requests for map output statuses.
  *
+ * MAKING A CHANGE WHICH SHOULD BE LABELED AS CORE
  * All public methods of this class are thread-safe.
  */
 private class ShuffleStatus(numPartitions: Int) extends Logging {
