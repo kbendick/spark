@@ -17,7 +17,7 @@
 
 #
 # This is only a test of the propesed new GH action based PR labeler for [SPARK-33282].
-# Do not merge.
+# Do not merge. This PR should only be opened in forks for testing, not in the Apache repo.
 #
 
 import itertools
