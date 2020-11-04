@@ -56,14 +56,14 @@ EXAMPLES:
   - "examples/**/*"
   - "/bin/run-example*"
 # Core has been updated with some verification needed.
+# If any file matches all of the globs defined in the list started by `any`, label is applied.
 CORE:
-  # If any file matches all of the globs defined in the list started by `any`, label is applied.
-  - any: ["/core/**/*", "!**/*UI.scala", "!**/ui/**/*"]
-  - any: ["/common/kvstore/**/*"]
-  - any: ["/common/network-common/**/*"]
-  - any: ["/common/network-shuffle/**/*"]
-  - any: ["/python/pyspark/**/*.py"]
-  - any: ["/python/pyspark/tests/**/*.py"]
+- any: ["/core/**/*", "!**/*UI.scala", "!**/ui/**/*"]
+- any: ["/common/kvstore/**/*"]
+- any: ["/common/network-common/**/*"]
+- any: ["/common/network-shuffle/**/*"]
+- any: ["/python/pyspark/**/*.py"]
+- any: ["/python/pyspark/tests/**/*.py"]
 # Updated
 SPARK SUBMIT:
   - "/bin/spark-submit*"
