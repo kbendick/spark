@@ -24,9 +24,17 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-    # Required to use main to use any / all, which are needed for using ! matches properly.
-    # should specify a PR so we can get any / all. 9794b14
-    - uses: actions/labeler@main  # Required to use main to use any / all, which are needed for using ! matches properly.
+    # In order to get back the negated matches like in the old config,
+    # we need the actinons/labeler concept of `all` and `any` which matches
+    # all of the given constraints / glob patterns 
+    # for either `all` files or `any` file in the change set.
+    #
+    # Issue that mentiones any/all only being available on main branch (previously called master): 
+    #    - https://github.com/actions/labeler/issues/73#issuecomment-639034278
+    #
+    # However, these are not in a published release and the current `main` branch
+    # has some issues upon testing.
+    - uses: actions/labeler@2.2.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         sync-labels: true
