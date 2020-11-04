@@ -58,7 +58,10 @@ EXAMPLES:
 # Core has been updated with some verification needed.
 CORE:
   # If any file matches all of the globs defined in the list started by `any`, label is applied.
-  - any: ["/core/**/*", "!**/*UI.scala", "!**/ui/**/*"]
+  - any:
+    - "/core/**/*"
+    - "!**/*UI.scala"
+    - "!**/ui/**/*"
   - "/common/kvstore/**/*"
   - "/common/network-common/**/*"
   - "/common/network-shuffle/**/*"
