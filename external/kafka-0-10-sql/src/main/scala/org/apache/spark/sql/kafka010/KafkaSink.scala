@@ -17,6 +17,9 @@
 
 package org.apache.spark.sql.kafka010
 
+
+// Unnecessary comment to check if STRUCTURED STREAMING label is applied
+
 import java.{util => ju}
 
 import org.apache.spark.internal.Logging
