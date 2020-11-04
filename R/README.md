@@ -2,6 +2,8 @@
 
 SparkR is an R package that provides a light-weight frontend to use Spark from R.
 
+This is just a test to see if this PR will be labeled with R, as well as hopefully the label generated from README. DO NOT MERGE THIS.
+
 ### Installing sparkR
 
 Libraries of sparkR need to be created in `$SPARK_HOME/R/lib`. This can be done by running the script `$SPARK_HOME/R/install-dev.sh`.
