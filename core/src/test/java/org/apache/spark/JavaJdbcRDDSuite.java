@@ -34,6 +34,7 @@ import org.junit.Test;
 public class JavaJdbcRDDSuite implements Serializable {
   private transient JavaSparkContext sc;
 
+  // Random comment to test if this will be properly labeled as core with the master branch of labeler action
   @Before
   public void setUp() throws ClassNotFoundException, SQLException {
     sc = new JavaSparkContext("local", "JavaAPISuite");
