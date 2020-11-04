@@ -18,6 +18,10 @@
 package org.apache.spark.ml.impl
 
 
+/**
+ * Dummy commit to test if changes to the layout of negated CORE files worked.
+ * This PR should NOT be labeled Core and it should not be merged.
+ */
 private[spark] object Utils {
 
   lazy val EPSILON = {
