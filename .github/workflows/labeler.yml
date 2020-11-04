@@ -28,7 +28,7 @@ jobs:
       RUNNER_DEBUG: "1"
       NODE_DEBUG: "tunnel"
     steps:
-    - uses: actions/labeler@2.2.0
+    - uses: actions/labeler@v3-preview
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         sync-labels: true
