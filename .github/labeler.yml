@@ -24,7 +24,7 @@
 # If any file matches all of the globs defined in the list started by `any`, label is applied.
 # Missing this negation "!**/ui/**/*" as well as '!**/*UI.scala'
 CORE:
-  any: ['/core/**/*']
+- any: ['/core/**/*']
 # ML:
 #   - "**/ml/**/*"
 #   - "**/*mllib_*.R"
