@@ -17,6 +17,7 @@
 
 package org.apache.spark
 
+// Random comment to see if CORE label will be applied
 import java.util.Properties
 import javax.annotation.concurrent.GuardedBy
 
