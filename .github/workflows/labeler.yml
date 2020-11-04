@@ -23,10 +23,10 @@ on: pull_request_target
 jobs:
   triage:
     runs-on: ubuntu-latest
+    env:
+      IS_DEBUG: "1"
     steps:
     - uses: actions/labeler@2.2.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         sync-labels: true
-      env:
-        IS_DEBUG: "1"
