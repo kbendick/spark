@@ -59,11 +59,11 @@ EXAMPLES:
 # If any file matches all of the globs defined in the list started by `any`, label is applied.
 CORE:
 - any: ["/core/**/*", "!**/*UI.scala", "!**/ui/**/*"]
-- any: ["/common/kvstore/**/*"]
-- any: ["/common/network-common/**/*"]
-- any: ["/common/network-shuffle/**/*"]
-- any: ["/python/pyspark/**/*.py"]
-- any: ["/python/pyspark/tests/**/*.py"]
+# - any: ["/common/kvstore/**/*"]
+# - any: ["/common/network-common/**/*"]
+# - any: ["/common/network-shuffle/**/*"]
+# - any: ["/python/pyspark/**/*.py"]
+# - any: ["/python/pyspark/tests/**/*.py"]
 # Updated
 SPARK SUBMIT:
   - "/bin/spark-submit*"
