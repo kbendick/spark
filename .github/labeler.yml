@@ -57,9 +57,8 @@ EXAMPLES:
   - "/bin/run-example*"
 # Core has been updated with some verification needed.
 CORE:
-  - "/core/**/*"
-  - "!**/UI.scala"  # TODO - Verify this change
-  - "!**/ui/**/*"  # TODO - Verify this change
+  # If any file matches all of the globs defined in the list started by `any`, label is applied.
+  - any: ["/core/**/*", "!**/*UI.scala", "!**/ui/**/*"]
   - "/common/kvstore/**/*"
   - "/common/network-common/**/*"
   - "/common/network-shuffle/**/*"
@@ -74,7 +73,7 @@ SPARK SHELL:
   - "/bin/spark-shell*"
 # Updated - Needs testing
 SQL:
-  - "**/sql/**/*"
+  - "**/sql/**/*"  # TODO - Will this match repo root /sql folder?
   - "/common/unsafe/**/*"
   - "!/python/pyspark/sql/avro/**/*"
   - "!/python/pyspark/sql/streaming.py"
