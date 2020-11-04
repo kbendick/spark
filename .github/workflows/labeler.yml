@@ -26,6 +26,7 @@ jobs:
     env:
       IS_DEBUG: "1"
       RUNNER_DEBUG: "1"
+      NODE_DEBUG: (process.env.NODE_DEBUG && /\btunnel\b/.test(process.env.NODE_DEBUG))
     steps:
     - uses: actions/labeler@2.2.0
       with:
