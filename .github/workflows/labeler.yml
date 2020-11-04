@@ -21,14 +21,12 @@ name: "Pull Request Labeler"
 on: pull_request_target
 
 jobs:
-  triage:
+  label:
     runs-on: ubuntu-latest
-    env:
-      IS_DEBUG: "1"
-      RUNNER_DEBUG: "1"
-      NODE_DEBUG: "tunnel"
     steps:
-    - uses: actions/labeler@master  # should specify a PR so we can get any / all. 9794b14
+    # Required to use main to use any / all, which are needed for using ! matches properly.
+    # should specify a PR so we can get any / all. 9794b14
+    - uses: actions/labeler@main  # Required to use main to use any / all, which are needed for using ! matches properly.
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         sync-labels: true
