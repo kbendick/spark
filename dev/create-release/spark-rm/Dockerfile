@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+# Unnecessary change to see if INFRA tag will be applied when a top level folder has a leading slash
+
 # Image for building Spark releases. Based on Ubuntu 18.04.
 #
 # Includes:
