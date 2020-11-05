@@ -39,6 +39,9 @@ import org.apache.spark.sql.streaming._
  */
 object StructuredSessionization {
 
+  /**
+   * Unnecessary change to test PR labeler for SPARK-33282 - DO NOT MERGE
+   */
   def main(args: Array[String]): Unit = {
     if (args.length < 2) {
       System.err.println("Usage: StructuredSessionization <hostname> <port>")
