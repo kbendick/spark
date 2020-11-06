@@ -41,6 +41,8 @@ import org.apache.spark.util.{UninterruptibleThread, UninterruptibleThreadRunner
  * [[org.apache.spark.sql.kafka010.ConsumerStrategy]]
  * for more details.
  *
+ * Add in change to test match for DSTREAM PR label (amongst others) for SPARK-33282
+ *
  * Note: This class is not ThreadSafe
  */
 private[kafka010] class KafkaOffsetReader(
