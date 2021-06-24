@@ -124,7 +124,6 @@ loadConfigFile() {
   cat "$1" | sed '/^\#/d'
 }
 
-## TODO - Possibly check if the Berkeley AMP Labs have an sbtopts file if they don't pass CI
 # if sbtopts files exist, prepend their contents to $@ so it can be processed by this runner
 [[ -f "$etc_sbt_opts_file" ]] && set -- $(loadConfigFile "$etc_sbt_opts_file") "$@"
 [[ -f "$sbt_opts_file" ]] && set -- $(loadConfigFile "$sbt_opts_file") "$@"
